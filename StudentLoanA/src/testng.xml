@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SeleniumWebDriver Grid" verbose="3" parallel="classes" thread-count="2">
+ 
+ <!--  
+  <test name="Regression1"   >
+    	<packages>
+      		<package name="com.qa.loanA.LoanTestA.scripts" />
+   		</packages>
+ 	</test>-->
+ 
+ 	 <!-- 
+ 	<test name="IEScript">
+ 		<parameter name="browser" value="iexplore"></parameter>
+    	<classes>
+     		<class name="com.qa.loanA.LoanTestA"/>
+    	</classes>
+  	</test> -->
+  	
+  	<test name="FFScript">
+ 		<parameter name="browser" value="firefox"></parameter>
+    	<classes>
+     		<class name="com.qa.loanA.LoanTestA"/>
+    	</classes>
+  	</test>
+  	<!-- 
+  	<test name="GCScript">
+ 		<parameter name="browser" value="chrome"></parameter>
+    	<classes>
+     		<class name="com.qa.loanA.LoanTestA"/>
+    	</classes>
+  	</test> -->
+  	 
+  	
+ 
+</suite>

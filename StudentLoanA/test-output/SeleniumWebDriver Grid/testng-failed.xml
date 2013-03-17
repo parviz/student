@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="3" name="Failed suite [SeleniumWebDriver Grid]" parallel="classes">
+  <parameter name="browser" value="chrome"/>
+  <test name="IEScript(failed)" parallel="classes">
+    <parameter name="browser" value="iexplore"/>
+    <classes>
+      <class name="com.qa.loanA.LoanTestA">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.qa.loanA.LoanTestA -->
+    </classes>
+  </test> <!-- IEScript(failed) -->
+  <test name="GCScript(failed)" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.loanA.LoanTestA">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- com.qa.loanA.LoanTestA -->
+    </classes>
+  </test> <!-- GCScript(failed) -->
+</suite> <!-- Failed suite [SeleniumWebDriver Grid] -->
